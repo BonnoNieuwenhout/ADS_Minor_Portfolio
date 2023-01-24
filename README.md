@@ -53,15 +53,55 @@ Deze environments kunnen gebruikt worden voor SB3. De RL modellen die SB3 aanbie
 Door een RL model van SB3 onze environment mee te geven en het model vervolgens te trainen, krijgen we een RL model dat ons probleemdomein kan oplossen.
 
 Bij het gebruik maken van SB3 heb ik veel geleerd over het PPO en A2C RL model. Ik heb hierbij naar de documentatie gekeken van de modellen en geleerd over de principes over hoe de modellen te werk gaan.
+De link naar de documentatie is hier [link]
+
+Om kennis op te doen hoe het maken van een environment werkt hebben we gekeken naar voorbeelden online en video's op youtube.
+Ook heb ik gekeken naar de voorbeelden die op SB3 staan. Deze voorbeelden zijn kort van code en goed gedocumenteerd waardoor ze goed te lezen en begrijpen zijn.
+In deze link staan een aantal voorbeelden [link]
 
 ## 3. Jupyter notebooks
 
+In dit hoofdstuk laat ik zien wat ik heb geprogrammeerd voor beide projecten.
+Hoe ik data heb gesimuleerd en hoe ik de modellen heb ontwikkeld. 
+Er zijn veel iteraties over de code heengegaan en heb veel dingen continue lopen aanpassen. Hierdoor zijn er veel stukken code die dezelfde functie hebben.
+Ik heb daarom alleen de laatste versies benoemd van wat ik heb ontwikkeld, aangezien het is geïtereerd op voorgaande code.
 
-#### Simulatie
+### 3.1 FoodBoost
+
+#### 3.1.1 Simulatie
 
 We hebben de data die we nodig hadden allemaal gesimuleerd. Hiervoor heb ik classes aangemaakt om deze data in op te slaan.
 Om dit voor het testen overzichtelijk te houden heb ik een aantal dingen opgesplitst.
-Het maken van de users en het maken van de benodigde matrix heb ik in afzonderlijke notebooks gedaan
+Het maken van de users en het maken van de benodigde matrix heb ik in afzonderlijke notebooks gedaan.
+
+- [link] user class
+- [link] algemene utils
+- [link] Create users
+- [link] Create matrix
+
+#### 3.1.2 Classifiers
+
+Ik heb een utils class en een dto class geschreven zodat ik het testen van de classifiers overzichterlijker kon doen.
+
+- [link] classifier utils
+- [link] dto
+
+#### 3.1.3 Testen
+
+Om uiteindelijk de gesimuleerde data te gebruiken en de classifiers te testen op de matrixen heb ik een aparte notebook gemaakt.
+Hierin wordt de matrix aan de classifiers gegeven en vervolgens wordt er per classifier een score bepaald.
+De data voor elke classifier wordt in een tabel gezet en deze vervolgens weergegeven.
+In deze tabel staan de scores van elk model zodat kan worden vergeleken welk model het beste is.
+
+Ik data op een aantal manieren getest. Deze zijn hieronder op een rij gezet
+
+- [link] 1 tegen 1
+- [link] 1 tegen n
+- [link] n tegen n
+
+### 3.2 Cofano
+
+
 
 4. ## Presentaties
 
