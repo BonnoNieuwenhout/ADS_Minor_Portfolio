@@ -127,9 +127,9 @@ In deze tabel staan de scores van elk model zodat kan worden vergeleken welk mod
 
 Ik data op een aantal manieren getest. Deze zijn hieronder op een rij gezet
 
-- [link] 1 tegen 1
-- [link] 1 tegen n
-- [link] n tegen n
+- [1 tegen 1](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/1b95f351b9b07a29ee626f82c092d484aeeeac17/notebooks/FoodBoost/Test-Classifiers-With-LooV1-Compare-Tags-1on1-Specific.ipynb)
+- [1 tegen n](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/1b95f351b9b07a29ee626f82c092d484aeeeac17/notebooks/FoodBoost/Test-Classifiers-With-LooV1-Compare-Tags-1onN-Specific.ipynb)
+- [n tegen n](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/1b95f351b9b07a29ee626f82c092d484aeeeac17/notebooks/FoodBoost/Test-Classifiers-With-LooV1-Compare-Tags-NonN-Specific.ipynb)
 
 ### 3.2 Cofano
 
