@@ -182,6 +182,7 @@ Deze afbeeldingen zijn een weergave hoe het model geleerd heeft en vervolgens ee
 ##### 3.2.2.1 3x3x3
 
 Bijbehorende [notebook](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/74229c4ad578f9d5f36d3459c717dc933a9a5689/notebooks/Cofano/Container%20Environment%20V12-Empty-Start-Step-Counter-Generalized.ipynb)
+
 De value loss grafiek van het model bij een yard van 3 bij 3 bij 3
 
 ![img.png](images/value_loss_3x3x3.png)
