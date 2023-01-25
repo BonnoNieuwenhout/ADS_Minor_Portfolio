@@ -204,6 +204,16 @@ Bijbehorende [notebook](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/
 
 Hieronder de visualisatie van een 5 bij 5 bij 5 yard
 
+De value loss grafiek van het model bij een yard van 5 bij 5 bij 5
+
+![img_1.png](images/value_loss_5x5x5.png)
+
+De loss grafiek van het model bij een yard van 5 bij 5 bij 5
+
+![img.png](images/loss_5x5x5.png)
+
+De visualisatie van de containers die zijn neergezet
+
 ![img.png](images/visualisatie_container_5x5x5_VA.png)
 
 ![img.png](images/visualisatie_container_5x5x5_BA.png)
