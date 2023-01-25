@@ -62,17 +62,17 @@ Hiervoor hebben we ons moeten verdiepen in wat reinforcement learning inhoud, ho
 We hebben gekeken naar een aantal voorbeelden. Een paar voorbeelden om te begrijpen hoe het is gemaakt en een ander aantal dat al meer overlapping zou hebben met ons probleemdomein.
 
 #### Stable baselines 3
-Om ons te helpen hebben we gebruik gemaakt van een bekend framework voor RL. Dit framework heeft ons veel tijd en moeite bespaard, omdat we veel dingen hierdoor zelf niet hoefde te bouwen.
-Om een RL toe te passen kan je gebruik maken van gym[link]. Met gym kan je RL environments bouwen.
+Om ons te helpen hebben we gebruik gemaakt van een bekend framework, genaamd [stable-baselines3](https://stable-baselines3.readthedocs.io/en/master/), voor RL. Dit framework heeft ons veel tijd en moeite bespaard, omdat we veel dingen hierdoor zelf niet hoefde te bouwen.
+Om een RL toe te passen kan je gebruik maken van [gym](https://www.gymlibrary.dev/). Met gym kan je RL environments bouwen.
 Deze environments kunnen gebruikt worden voor SB3. De RL modellen die SB3 aanbied werken namelijk op basis van deze environments.
 Door een RL model van SB3 onze environment mee te geven en het model vervolgens te trainen, krijgen we een RL model dat ons probleemdomein kan oplossen.
 
-Bij het gebruik maken van SB3 heb ik veel geleerd over het PPO en A2C RL model. Ik heb hierbij naar de documentatie gekeken van de modellen en geleerd over de principes over hoe de modellen te werk gaan.
-De link naar de documentatie is hier [link]
+Bij het gebruik maken van SB3 heb ik veel geleerd over het [PPO](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html) en [A2C](https://stable-baselines3.readthedocs.io/en/master/modules/a2c.html) RL model. 
+Ik heb hierbij naar de documentatie gekeken van de modellen en geleerd over de principes over hoe de modellen te werk gaan.
 
 Om kennis op te doen hoe het maken van een environment werkt hebben we gekeken naar voorbeelden online en video's op youtube.
 Ook heb ik gekeken naar de voorbeelden die op SB3 staan. Deze voorbeelden zijn kort van code en goed gedocumenteerd waardoor ze goed te lezen en begrijpen zijn.
-In deze link staan een aantal voorbeelden [link]
+In deze link staan een aantal [voorbeelden](https://stable-baselines3.readthedocs.io/en/master/guide/examples.html)
 
 #### Multiprocessing
 
@@ -87,9 +87,8 @@ Deze is daarom niet terug te zien bij de grafieken van het model zelf.
 
 #### Maximaal aantal timesteps
 
-In dit paper is te lezen dat het bijhouden van een maximale step counter en dit te gebruiken voor bij RL belangrijk is.
-Dit heb ik uiteindelijk ook toegepast en heb later de penalty voor buiten de yard weggehaald en vervangen met een penalty over het aantal stappen meer dan minimaal behaald kan worden.
-[link] paper aantal timesteps
+In dit [paper](https://arxiv.org/abs/1712.00378) is te lezen dat het bijhouden van een maximale step counter en dit te gebruiken voor bij RL belangrijk is.
+Dit heb ik uiteindelijk ook toegepast en heb later de penalty voor buiten de yard weggehaald.
 
 ## 3. Jupyter notebooks
 
