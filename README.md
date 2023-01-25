@@ -164,7 +164,11 @@ De loss grafiek van het model bij een yard van 3 bij 3 bij 3
 
 De visualisatie van de containers die zijn neergezet
 
-##### 3.2.x.2 yxyxy
+![img.png](images/visualisatie_containers_3x3x3.png)
+
+Zoals te zien is in de visualisatie zijn de containers voor elk schip vanaf de lange zijde te benaderen.
+
+##### 3.2.x.2 *Andere hoogte*
 
 4. ## Presentaties
 
