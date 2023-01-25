@@ -106,17 +106,17 @@ We hebben de data die we nodig hadden allemaal gesimuleerd. Hiervoor heb ik clas
 Om dit voor het testen overzichtelijk te houden heb ik een aantal dingen opgesplitst.
 Het maken van de users en het maken van de benodigde matrix heb ik in afzonderlijke notebooks gedaan.
 
-- [link] user class
-- [link] algemene utils
-- [link] Create users
-- [link] Create matrix
+- [User class](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/4f5b4fe33937a2b2e9a5c52969cf305aba453dce/notebooks/FoodBoost/UserClass.ipynb)
+- [Algemene utils](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/4f5b4fe33937a2b2e9a5c52969cf305aba453dce/notebooks/FoodBoost/Utils.ipynb)
+- [Create users](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/4f5b4fe33937a2b2e9a5c52969cf305aba453dce/notebooks/FoodBoost/CreateUsers.ipynb)
+- [Create matrix](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/4f5b4fe33937a2b2e9a5c52969cf305aba453dce/notebooks/FoodBoost/CreateLooV1DataMatrix_compare_tags.ipynb)
 
 #### 3.1.2 Classifiers
 
 Ik heb een utils class en een dto class geschreven zodat ik het testen van de classifiers overzichterlijker kon doen.
 
-- [link] classifier utils
-- [link] dto
+- [Classifier utils](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/4f5b4fe33937a2b2e9a5c52969cf305aba453dce/notebooks/FoodBoost/ClassifierUtils.ipynb)
+- [Classifier dto](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/4f5b4fe33937a2b2e9a5c52969cf305aba453dce/notebooks/FoodBoost/ClassifierResultDto.ipynb)
 
 #### 3.1.3 Testen
 
