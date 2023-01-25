@@ -150,8 +150,8 @@ om te kijken hoever ik kon komen zonder verder aanpassingen te doen. Zowel de 3x
 
 Het environment dat ik heb gebouwd zal ik hier in het kort beschrijven.
 Zoals eerder is benoemd is het bijhouden en handhaven van een maximaal aantal timesteps belangrijk.
-Aangezien het niet nodig is om zo snel mogelijk de containers te plaatsen zal er geen penalty worden uitgedeeld op basis van het aantal timesteps.
-Het environment kan al door de andere penalty's een lagere score krijgen.
+Alhoewel er een maximaal aantal steps is toegevoegd zit, bleef het wel van belang om een penalty uit te delen als de agent een container te hoog wilt plaatsen.
+Anders zal de agent niet alle containers plaatsen, want ook niet de bedoeling is.
 
 ##### 3.2.1.1 Action en observation space
 
