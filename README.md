@@ -17,7 +17,7 @@ Ik ben erg tevreden met de ontwikkeling die ik dit halfjaar heb gemaakt en kan m
 
 ### 1.1 Inhoud
 In dit portfolio is te lezen wat ik tijdens mijn minor applied data science heb geleerd en hoe ik mijn vaardigheden heb ontwikkeld. 
-Elk punt is opgedeeld in het project voor FoodBoost en het project voor Cofano
+Elk hoofdstuk is opgedeeld in het project voor FoodBoost en het project voor Cofano.
 
 ### 1.2 FoodBoost
 Voor het project van FoodBoost moest er gekeken worden naar het helpen van mensen in het ontwikkelen van een gezonder diet met behulp van machine learning. 
@@ -59,7 +59,7 @@ We zijn 4 weken later begonnen aan dit project, dus we hebben daarvoor al via de
 
 Meden door de gesprekken met Jeroen Vuurens hebben we besloten om ook RL te gebruiken voor ons probleemdomein.
 Hiervoor hebben we ons moeten verdiepen in wat reinforcement learning inhoud, hoe je het kan toepassen en hoe je het kan opbouwen.
-We hebben gekeken naar een aantal voorbeelden. Een paar om te begrijpen hoe het is gemaakt en een ander aantal dat al meer overkapping zou hebben met ons probleemdomein.
+We hebben gekeken naar een aantal voorbeelden. Een paar voorbeelden om te begrijpen hoe het is gemaakt en een ander aantal dat al meer overlapping zou hebben met ons probleemdomein.
 
 #### Stable baselines 3
 Om ons te helpen hebben we gebruik gemaakt van een bekend framework voor RL. Dit framework heeft ons veel tijd en moeite bespaard, omdat we veel dingen hierdoor zelf niet hoefde te bouwen.
