@@ -101,7 +101,10 @@ Ik data op een aantal manieren getest. Deze zijn hieronder op een rij gezet
 
 ### 3.2 Cofano
 
+![img.png](images/value_loss_500k_3x3x3.png)
 
+
+![img.png](images/loss_500k_3x3x3.png)
 
 4. ## Presentaties
 
