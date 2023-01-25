@@ -4,6 +4,17 @@ Bonno Nieuwenhout 19122381 groep 1
 
 ## 1. Inleiding
 
+Ik heb van 29 augustus 2022 t/m 3 februari 2023 de minor Applied Data science gevolgd.
+Ik heb dit op de Haagse Hogeschool in Den Haag gedaan en heb samen met mijn groepsgenoten hierbij twee projecten mogen doen.
+We hadden de keuze tussen verschillende projecten waarbij we de eerste 6 weken aan het project van FoodBoost hebben gezeten.
+Vervolgens hebben we ervoor gekozen om nog een periode van 4 weken hier verder aan te werken om onze oplossing beter te maken.
+Na deze 4 weken hebben we vervolgens 2 keer 4 weken lang aan het project van Cofano gewerkt.
+Hier hebben we uiteindelijk onze paper over geschreven en daarom zal ik over dit onderwerp wat meer vertellen.
+
+Ik ben begonnen aan deze minor, omdat ik graag een nieuwe tak wilde leren van programmeren.
+Ik had al kennis over object oriented programming, maar wilde graag leren hoe machine learning werkt en hoe ik dat zelf kon ontwikkelen.
+Ik ben erg tevreden met de ontwikkeling die ik dit halfjaar heb gemaakt en kan met trots terugkijken op wat ik heb ontwikkeld.
+
 ### 1.1 Inhoud
 In dit portfolio is te lezen wat ik tijdens mijn minor applied data science heb geleerd en hoe ik mijn vaardigheden heb ontwikkeld. 
 Elk punt is opgedeeld in het project voor FoodBoost en het project voor Cofano
@@ -40,6 +51,9 @@ Hierdoor heb ik kennis gedaan over KNN, Logistic Regression, Multinomial Naive B
 Verder hebben we alle data gesimuleerd. Ik heb geleerd hoe dit gedaan moest worden en vervolgens toegepast
 
 ### 2.2 Cofano
+
+#### Inleiding
+
 Met het project van Cofano hebben we ons bezig gehouden met Reinforcement Learning.
 We zijn 4 weken later begonnen aan dit project, dus we hebben daarvoor al via de andere groepen geleerd over het project.
 
@@ -47,7 +61,8 @@ Meden door de gesprekken met Jeroen Vuurens hebben we besloten om ook RL te gebr
 Hiervoor hebben we ons moeten verdiepen in wat reinforcement learning inhoud, hoe je het kan toepassen en hoe je het kan opbouwen.
 We hebben gekeken naar een aantal voorbeelden. Een paar om te begrijpen hoe het is gemaakt en een ander aantal dat al meer overkapping zou hebben met ons probleemdomein.
 
-Om ons te helpen hebben gebruik gemaakt van een bekend framework voor RL. Dit framework heeft ons veel tijd en moeite bespaard, omdat we veel dingen hierdoor zelf niet hoefde te bouwen.
+#### Stable baselines 3
+Om ons te helpen hebben we gebruik gemaakt van een bekend framework voor RL. Dit framework heeft ons veel tijd en moeite bespaard, omdat we veel dingen hierdoor zelf niet hoefde te bouwen.
 Om een RL toe te passen kan je gebruik maken van gym[link]. Met gym kan je RL environments bouwen.
 Deze environments kunnen gebruikt worden voor SB3. De RL modellen die SB3 aanbied werken namelijk op basis van deze environments.
 Door een RL model van SB3 onze environment mee te geven en het model vervolgens te trainen, krijgen we een RL model dat ons probleemdomein kan oplossen.
@@ -58,6 +73,23 @@ De link naar de documentatie is hier [link]
 Om kennis op te doen hoe het maken van een environment werkt hebben we gekeken naar voorbeelden online en video's op youtube.
 Ook heb ik gekeken naar de voorbeelden die op SB3 staan. Deze voorbeelden zijn kort van code en goed gedocumenteerd waardoor ze goed te lezen en begrijpen zijn.
 In deze link staan een aantal voorbeelden [link]
+
+#### Multiprocessing
+
+Als je het trainen van je model snel wilt versnellen kom je al snel aan bij multiprocessing.
+Ik heb dit toegepast in mijn code voor het trainen van het model.
+Met multiprocessing kan je gebruik maken van de cores van de cpu.
+Hierdoor kan je niet sequentieel trainen, maar parallel.
+Dit houd in dat je bijvoorbeeld 4 yards tegelijk aan het invullen bent.
+Het PPO model kan hiervoor worden gebruikt en d.m.v. multiprocessing kan het PPO razendsnel leren.
+Waar ik helaas wel achter kwam is dat er met multiprocessing er geen reward score meer te zien is, aangezien er meerdere rewards parallel lopen.
+Deze is daarom niet terug te zien bij de grafieken van het model zelf.
+
+#### Maximaal aantal timesteps
+
+In dit paper is te lezen dat het bijhouden van een maximale step counter en dit te gebruiken voor bij RL belangrijk is.
+Dit heb ik uiteindelijk ook toegepast en heb later de penalty voor buiten de yard weggehaald en vervangen met een penalty over het aantal stappen meer dan minimaal behaald kan worden.
+[link] paper aantal timesteps
 
 ## 3. Jupyter notebooks
 
@@ -101,10 +133,38 @@ Ik data op een aantal manieren getest. Deze zijn hieronder op een rij gezet
 
 ### 3.2 Cofano
 
+
+
+Ik heb eerst geïtereerd van een vollere yard naar een lege yard. Echter, Ik kwam erachter dat dit uiteindelijk niet ten goede kwam voor het model.
+Door scores te vergelijken zag ik dat het model beter presteerde als het model altijd vanaf een lege yard begon.
+Dit kan komen doordat de functie die ik heb geschreven voor het invullen van de yard het een sub-optimale state geeft voor het model.
+Naar mijn verwachting werkte het invullen van de yard dus niet ten goede voor het model. Ik heb dit daarom uiteindelijk niet meer gebruikt.
+Dit had geen invloed op de 3 bij 3 bij 3 yard, maar ik zag wel negatieve invloeden zodra het probleemdomein groter werd.
+
+Omdat de complexiteit van het probleem sterk kan toenemen naarmate de yard van het probleemdomein groter word, heb ik het model eerst getraint op een 3 bij 3 bij 3 yard.
+Nadat ik had ondervonden dat het model dit probleem goed kon oplossen heb ik gekeken in hoeverre ik de grootte kon opschalen.
+Aangezien ik de input voor de grootte van de yard variabel heb gemaakt was dit gemakkelijk aan te passen.
+Echter, dit betekende niet meteen dat het model in staat was om dit op te lossen. Ik ben simpelweg de waardes van de input voor het environment gaan tweaken
+om te kijken hoever ik kon komen zonder verder aanpassingen te doen. Zowel de 3x3x3 als het grootste resultaat zijn hieronder te zien in de visualisatie.
+
+#### 3.2.x Resultaten visualisatie
+
+Om gemakkelijk te kunnen zien hoe goed het model uiteindelijk is geworden zijn hieronder een aantal afbeeldingen te zien.
+Deze afbeeldingen zijn een weergave hoe het model geleerd heeft en vervolgens een visualisatie van de neergezeten containers.
+
+##### 3.2.x.1 3x3x3
+
+De value loss grafiek van het model bij een yard van 3 bij 3 bij 3
+
 ![img.png](images/value_loss_500k_3x3x3.png)
 
+De loss grafiek van het model bij een yard van 3 bij 3 bij 3
 
 ![img.png](images/loss_500k_3x3x3.png)
+
+De visualisatie van de containers die zijn neergezet
+
+##### 3.2.x.2 yxyxy
 
 4. ## Presentaties
 
