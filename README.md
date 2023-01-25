@@ -146,12 +146,40 @@ Aangezien ik de input voor de grootte van de yard variabel heb gemaakt was dit g
 Echter, dit betekende niet meteen dat het model in staat was om dit op te lossen. Ik ben simpelweg de waardes van de input voor het environment gaan tweaken
 om te kijken hoever ik kon komen zonder verder aanpassingen te doen. Zowel de 3x3x3 als het grootste resultaat zijn hieronder te zien in de visualisatie.
 
-#### 3.2.x Resultaten visualisatie
+#### 3.2.1 Environment
+
+Het environment dat ik heb gebouwd zal ik hier in het kort beschrijven.
+Zoals eerder is benoemd is het bijhouden en handhaven van een maximaal aantal timesteps belangrijk.
+Aangezien het niet nodig is om zo snel mogelijk de containers te plaatsen zal er geen penalty worden uitgedeeld op basis van het aantal timesteps.
+Het environment kan al door de andere penalty's een lagere score krijgen.
+
+##### 3.2.1.1 Action en observation space
+
+Verder bestaat de action space uit een x en y waarde. De observation is een dictionary met de volgende items:
+
+- Volgende schipnummer van de container dat geplaatst wordt
+- De state van de yard waarin de containers worden geplaatst
+- Het maximaal aantal stappen dat gezet kan worden
+- Het huidige aantal stappen dat gezet is
+- Een lijst waarin wordt bijgehouden hoeveel containers er voor elk schip nog aanwezig zijn
+
+#### 3.2.1.2 Generalisatie
+
+Het is belangrijk voor een RL-model om gegeneraliseerde data binnen te krijgen.
+Hierdoor blijft het model niet statisch en kan het veel beter omgaan met veranderende data.
+Daarnaast zal de input per episode kunnen wijzigen waardoor het model hiervan kan leren.
+De aantal containers per schip zal per episode verschillen. Hierdoor zal de lijst met aantal containers per schip elke keer varieren.
+Daarnaast worden de containers iedere keer random geshuffeld. Het model zal nooit de lijst in exact dezelfde volgorde tegenkomen.
+Het model kan dus nooit vaststellen wat het volgende container nummer zal worden.
+Hierdoor blijft het model op de hoede waardoor het slim blijft.
+
+
+#### 3.2.2 Resultaten visualisatie
 
 Om gemakkelijk te kunnen zien hoe goed het model uiteindelijk is geworden zijn hieronder een aantal afbeeldingen te zien.
 Deze afbeeldingen zijn een weergave hoe het model geleerd heeft en vervolgens een visualisatie van de neergezeten containers.
 
-##### 3.2.x.1 3x3x3
+##### 3.2.2.1 3x3x3
 
 De value loss grafiek van het model bij een yard van 3 bij 3 bij 3
 
@@ -168,7 +196,15 @@ De visualisatie van de containers die zijn neergezet
 
 Zoals te zien is in de visualisatie zijn de containers voor elk schip vanaf de lange zijde te benaderen.
 
-##### 3.2.x.2 *Andere hoogte*
+##### 3.2.2.2 5x5x5
+
+Bijbehorende notebook ()
+
+Hieronder de visualisatie van een 5 bij 5 bij 5 yard
+
+![img.png](images/visualisatie_container_5x5x5_VA.png)
+
+![img.png](images/visualisatie_container_5x5x5_BA.png)
 
 4. ## Presentaties
 
