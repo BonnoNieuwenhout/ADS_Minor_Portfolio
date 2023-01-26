@@ -135,9 +135,13 @@ Ik data op een aantal manieren getest. Deze zijn hieronder op een rij gezet
 Verder heb ik ook heat maps gemaakt om de resultaten vanuit de tabellen wat meer overzichtelijk te maken.
 Hieronder zijn een aantal heatmaps te zien en de daarbij behorende notebooks.
 
-- [1 tegen 1]()
+- [1 tegen 1](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/177f79fe05765a6ea0d0dd08bed36694382f4502/notebooks/FoodBoost/HeatingMapping_1on1-Specific.ipynb)
 
-- [1 tegen n]()
+![img.png](images/FoodBoost/heatmap_1-1.png)
+
+- [1 tegen n](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/177f79fe05765a6ea0d0dd08bed36694382f4502/notebooks/FoodBoost/HeatingMapping_1onN-Specific.ipynb)
+
+![img.png](images/FoodBoost/heatmap_1-n.png)
 
 ### 3.2 Cofano
 
@@ -194,16 +198,16 @@ Bijbehorende [notebook](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/
 
 De value loss grafiek van het model bij een yard van 3 bij 3 bij 3
 
-![img.png](images/value_loss_3x3x3.png)
+![img.png](images/Cofano/value_loss_3x3x3.png)
 
 De loss grafiek van het model bij een yard van 3 bij 3 bij 3
 
-![img.png](images/loss_3x3x3.png)
+![img.png](images/Cofano/loss_3x3x3.png)
 
 De visualisatie van de containers die zijn neergezet
 
-![img.png](images/visualisatie_container_3x3x3_VA.png)
-![img_1.png](images/visualisatie_container_3x3x3_AA.png)
+![img.png](images/Cofano/visualisatie_container_3x3x3_VA.png)
+![img_1.png](images/Cofano/visualisatie_container_3x3x3_AA.png)
 
 Zoals te zien is in de visualisatie zijn de containers voor elk schip vanaf de lange zijde te benaderen.
 
@@ -215,17 +219,17 @@ Hieronder de visualisatie van een 5 bij 5 bij 5 yard
 
 De value loss grafiek van het model bij een yard van 5 bij 5 bij 5
 
-![img_1.png](images/value_loss_5x5x5.png)
+![img_1.png](images/Cofano/value_loss_5x5x5.png)
 
 De loss grafiek van het model bij een yard van 5 bij 5 bij 5
 
-![img.png](images/loss_5x5x5.png)
+![img.png](images/Cofano/loss_5x5x5.png)
 
 De visualisatie van de containers die zijn neergezet
 
-![img.png](images/visualisatie_container_5x5x5_VA.png)
+![img.png](images/Cofano/visualisatie_container_5x5x5_VA.png)
 
-![img.png](images/visualisatie_container_5x5x5_BA.png)
+![img.png](images/Cofano/visualisatie_container_5x5x5_BA.png)
 
 ## 4. Presentaties
 
