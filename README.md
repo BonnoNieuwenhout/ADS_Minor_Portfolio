@@ -130,10 +130,14 @@ Ik data op een aantal manieren getest. Deze zijn hieronder op een rij gezet
 - [1 tegen n](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/1b95f351b9b07a29ee626f82c092d484aeeeac17/notebooks/FoodBoost/Test-Classifiers-With-LooV1-Compare-Tags-1onN-Specific.ipynb)
 - [n tegen n](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/1b95f351b9b07a29ee626f82c092d484aeeeac17/notebooks/FoodBoost/Test-Classifiers-With-LooV1-Compare-Tags-NonN-Specific.ipynb)
 
+#### 3.1.4 HeatMaps
+
 Verder heb ik ook heat maps gemaakt om de resultaten vanuit de tabellen wat meer overzichtelijk te maken.
 Hieronder zijn een aantal heatmaps te zien en de daarbij behorende notebooks.
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+- [1 tegen 1]()
+
+- [1 tegen n]()
 
 ### 3.2 Cofano
 
