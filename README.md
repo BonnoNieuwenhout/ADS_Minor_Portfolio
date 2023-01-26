@@ -233,7 +233,7 @@ De visualisatie van de containers die zijn neergezet
 ## 4. Presentaties
 
 Ik heb voor ons groepje een aantal keren gepresenteerd. Manon heeft bijna altijd de presentaties klaargezet en ik heb in sommige gevallen mijn aandeel hieraan toegevoegd.
-Ik heb niet alles gepresenteerd van de presentaties die ik hieronder zal benoemen natuurlijk, maar ik heb wel een significant aandeel erin gehad.
+Ik heb niet alles gepresenteerd van de presentaties die ik hieronder zal benoemen natuurlijk, maar ik heb wel een groot aandeel erin gehad.
 
 ### 4.1 FoodBoost
 
@@ -245,7 +245,16 @@ Ik heb niet alles gepresenteerd van de presentaties die ik hieronder zal benoeme
 - [Interne presentatie](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/fcd18409f7e1f5bf543caef9ec81b5c1e890c56f/presentaties/pres2%20week4%20-%20Containers%20groep%201.pdf)
 - [Interne presentatie](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/fcd18409f7e1f5bf543caef9ec81b5c1e890c56f/presentaties/pres4%20week8%20-%20Containers%20groep%201.pdf)
 
-5. ## Paper
+## 5. Paper
 
-6. ## Datacamp
+Tijdens het maken van het research paper heb ik me vooral beziggehouden met het onderdeel over de resultaten van ons onderzoek.
+Het model dat we uiteindelijk gebruikt hebben om onze resultaten te laten zien is het model uit mijn notebooks.
+Ik heb me daarom vooral beziggehouden met de resultaten hiervan, omdat ik er het meeste en directe kennis over had.
+Ik kon uitleggen wat er precies in het model gebeurt en hoe het werkt.
+Verder heb ik net als de andere groepsleden het paper nog meerdere keren doorgelezen om te kijken of er nog ergens foutjes zitten.
+
+- [Research paper]()
+- [Onderzoeksresultaten door Bonno]()
+
+## 6. Datacamp
 
