@@ -229,7 +229,8 @@ Ik heb voor ons groepje een aantal keer gepresenteerd. Manon bijna altijd de pre
 
 ### 4.1 FoodBoost
 
-- [Interne presentatie](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/dd15ca33125a0974b1e4a73b990914f104322e1e/presentaties/FOODBOOST%2006-11-2022%20intern%20pres.pptx)
+- [Interne presentatie](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/1ea25564b8503ac17eaa8170d2d7a3d9ca805c8b/presentaties/FOODBOOST%2006-11-2022%20intern%20pres.pdf)
+- 
 
 
 
