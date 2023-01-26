@@ -27,7 +27,7 @@ Zo kan de gebruiker gezonder eten en toch genieten van het voedsel.
 ### 1.3 Cofano
 Voor het project van Cofano was de probleemstelling het optimaliseren van terminalprocessen. 
 Schepen kunnen lange tijd wachten om in- of uitgeladen te worden en dat kost geld. 
-De strekking was dus het maken van een reinforcement learning model dat bepaalde processen hiervan kon versnellen.
+De strekking was dus het maken van een machine learning model dat bepaalde processen hiervan kon versnellen.
 
 ## 2. Kennis en Literatuur
 
@@ -55,7 +55,7 @@ Verder hebben we alle data gesimuleerd. Ik heb geleerd hoe dit gedaan moest word
 #### Inleiding
 
 Met het project van Cofano hebben we ons bezig gehouden met Reinforcement Learning.
-We zijn 4 weken later begonnen aan dit project, dus we hebben daarvoor al via de andere groepen geleerd over het project.
+We zijn 4 weken later dan andere groepen waren begonnen aan dit project, dus we hebben daardoor al via de andere groepen wat geleerd over het project.
 
 Meden door de gesprekken met Jeroen Vuurens hebben we besloten om ook RL te gebruiken voor ons probleemdomein.
 Hiervoor hebben we ons moeten verdiepen in wat reinforcement learning inhoud, hoe je het kan toepassen en hoe je het kan opbouwen.
@@ -82,13 +82,14 @@ Met multiprocessing kan je gebruik maken van de cores van de cpu.
 Hierdoor kan je niet sequentieel trainen, maar parallel.
 Dit houd in dat je bijvoorbeeld 4 yards tegelijk aan het invullen bent.
 Het PPO model kan hiervoor worden gebruikt en d.m.v. multiprocessing kan het PPO razendsnel leren.
-Waar ik helaas wel achter kwam is dat er met multiprocessing er geen reward score meer te zien is, aangezien er meerdere rewards parallel lopen.
-Deze is daarom niet terug te zien bij de grafieken van het model zelf.
+Waar ik helaas wel achter kwam, is dat er met multiprocessing geen reward score meer te zien is bij het uitrollen van de informatie.
+Dit komt omdat er natuurlijk meerdere rewards parallel lopen.
+Deze is daarom helaas niet terug te zien bij de grafieken van het model zelf.
 
 #### Maximaal aantal timesteps
 
-In dit [paper](https://arxiv.org/abs/1712.00378) is te lezen dat het bijhouden van een maximale step counter en dit te gebruiken voor bij RL belangrijk is.
-Dit heb ik uiteindelijk ook toegepast en heb later de penalty voor buiten de yard weggehaald.
+In dit [paper](https://arxiv.org/abs/1712.00378) is te lezen dat het bijhouden van een maximale step counter en dit te gebruiken voor RL belangrijk is.
+Dit heb ik uiteindelijk ook toegepast, maar de penalty wel behouden. Verder in het portfolio wordt hier wat meer over verteld.
 
 ## 3. Jupyter notebooks
 
@@ -98,6 +99,12 @@ Er zijn veel iteraties over de code heengegaan en heb veel dingen continue lopen
 Ik heb daarom alleen de laatste versies benoemd van wat ik heb ontwikkeld, aangezien het is geïtereerd op voorgaande code.
 
 ### 3.1 FoodBoost
+
+Voor het project van FoodBoost hebben we een supervised machine learning model gemaakt.
+Hierbij hebben gebruik gemaakt van een leave-one-out principe. We hebben daarbij voor elke user een lijst van 8 recepten gebruikt.
+Van deze recepten vullen we de ingrediënten in de tabel, maar laten er elke keer 1 recept uit.
+Dit doen we 2 keer waarbij we de eerste keer de ingrediënten toevoegen van het recept dat is weggelaten en de andere keer van een recept dat de user niet in zijn lijst heeft.
+Aan het model laten we weten welke goed is en welke fout en daarvan zal het model leren.
 
 #### 3.1.1 Simulatie
 
@@ -124,7 +131,7 @@ Hierin wordt de matrix aan de classifiers gegeven en vervolgens wordt er per cla
 De data voor elke classifier wordt in een tabel gezet en deze vervolgens weergegeven.
 In deze tabel staan de scores van elk model zodat kan worden vergeleken welk model het beste is.
 
-Ik data op een aantal manieren getest. Deze zijn hieronder op een rij gezet
+Ik heb data op een aantal manieren getest. Deze zijn hieronder op een rij gezet
 
 - [1 tegen 1](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/1b95f351b9b07a29ee626f82c092d484aeeeac17/notebooks/FoodBoost/Test-Classifiers-With-LooV1-Compare-Tags-1on1-Specific.ipynb)
 - [1 tegen n](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/1b95f351b9b07a29ee626f82c092d484aeeeac17/notebooks/FoodBoost/Test-Classifiers-With-LooV1-Compare-Tags-1onN-Specific.ipynb)
@@ -145,26 +152,34 @@ Hieronder zijn een aantal heatmaps te zien en de daarbij behorende notebooks.
 
 ### 3.2 Cofano
 
+Voor het project van Cofano hebben we een reinforcement learning model gemaakt.
+Deze zal elke keer een actie kiezen en vervolgens een container in de yard invullen.
+Hierbij kan het model een x en y coördinaat kiezen waar de container geplaatst zal worden.
+Nadat het environment in elkaar is gezet moet het model getraind worden. 
+Na een aangegeven aantal stappen is het model klaar met leren en kan het een voorspelling doen van de oplossing
+
+#### 3.2.1 Inleiding
+
 Ik heb eerst geïtereerd van een vollere yard naar een lege yard. Echter, Ik kwam erachter dat dit uiteindelijk niet ten goede kwam voor het model.
 Door scores te vergelijken zag ik dat het model beter presteerde als het model altijd vanaf een lege yard begon.
-Dit kan komen doordat de functie die ik heb geschreven voor het invullen van de yard het een sub-optimale state geeft voor het model.
-Naar mijn verwachting werkte het invullen van de yard dus niet ten goede voor het model. Ik heb dit daarom uiteindelijk niet meer gebruikt.
-Dit had geen invloed op de 3 bij 3 bij 3 yard, maar ik zag wel negatieve invloeden zodra het probleemdomein groter werd.
+Dit kan komen doordat de functie die ik heb geschreven voor het invullen van de yard een sub-optimale state geeft voor het model.
+Naar mijn verwachting had het invullen van de yard geen goede invloed op het model. Ik heb dit daarom uiteindelijk niet meer gebruikt.
+Het van vol naar leeg itereren had geen invloed op de 3 bij 3 bij 3 yard, maar ik zag wel negatieve invloeden zodra het probleemdomein groter werd.
 
 Omdat de complexiteit van het probleem sterk kan toenemen naarmate de yard van het probleemdomein groter word, heb ik het model eerst getraint op een 3 bij 3 bij 3 yard.
 Nadat ik had ondervonden dat het model dit probleem goed kon oplossen heb ik gekeken in hoeverre ik de grootte kon opschalen.
 Aangezien ik de input voor de grootte van de yard variabel heb gemaakt was dit gemakkelijk aan te passen.
 Echter, dit betekende niet meteen dat het model in staat was om dit op te lossen. Ik ben simpelweg de waardes van de input voor het environment gaan tweaken
-om te kijken hoever ik kon komen zonder verder aanpassingen te doen. Zowel de 3x3x3 als het grootste resultaat zijn hieronder te zien in de visualisatie.
+om te kijken hoever ik kon komen zonder verder aanpassingen te doen. Zowel de 3x3x3 als het grootste resultaat zijn later te zien in de visualisatie.
 
-#### 3.2.1 Environment
+#### 3.2.2 Environment
 
 Het environment dat ik heb gebouwd zal ik hier in het kort beschrijven.
 Zoals eerder is benoemd is het bijhouden en handhaven van een maximaal aantal timesteps belangrijk.
 Alhoewel er een maximaal aantal steps is toegevoegd zit, bleef het wel van belang om een penalty uit te delen als de agent een container te hoog wilt plaatsen.
 Anders zal de agent niet alle containers plaatsen, want ook niet de bedoeling is.
 
-##### 3.2.1.1 Action en observation space
+##### 3.2.2.1 Action en observation space
 
 Verder bestaat de action space uit een x en y waarde. De observation is een dictionary met de volgende items:
 
@@ -174,9 +189,9 @@ Verder bestaat de action space uit een x en y waarde. De observation is een dict
 - Het huidige aantal stappen dat gezet is
 - Een lijst waarin wordt bijgehouden hoeveel containers er voor elk schip nog aanwezig zijn
 
-#### 3.2.1.2 Generalisatie
+#### 3.2.2.2 Generalisatie
 
-Het is belangrijk voor een RL-model om gegeneraliseerde data binnen te krijgen.
+Het is belangrijk voor een RL-model om gegeneraliseerde data als input binnen te krijgen.
 Hierdoor blijft het model niet statisch en kan het veel beter omgaan met veranderende data.
 Daarnaast zal de input per episode kunnen wijzigen waardoor het model hiervan kan leren.
 De aantal containers per schip zal per episode verschillen. Hierdoor zal de lijst met aantal containers per schip elke keer varieren.
@@ -185,12 +200,12 @@ Het model kan dus nooit vaststellen wat het volgende container nummer zal worden
 Hierdoor blijft het model op de hoede waardoor het slim blijft.
 
 
-#### 3.2.2 Resultaten visualisatie
+#### 3.2.3 Resultaten visualisatie
 
 Om gemakkelijk te kunnen zien hoe goed het model uiteindelijk is geworden zijn hieronder een aantal afbeeldingen te zien.
 Deze afbeeldingen zijn een weergave hoe het model geleerd heeft en vervolgens een visualisatie van de neergezeten containers.
 
-##### 3.2.2.1 3x3x3
+##### 3.2.3.1 3x3x3
 
 Bijbehorende [notebook](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/74229c4ad578f9d5f36d3459c717dc933a9a5689/notebooks/Cofano/Container%20Environment%20V12-Empty-Start-Step-Counter-Generalized.ipynb)
 
@@ -210,7 +225,7 @@ De visualisatie van de containers die zijn neergezet
 
 Zoals te zien is in de visualisatie zijn de containers voor elk schip vanaf de lange zijde te benaderen.
 
-##### 3.2.2.2 5x5x5
+##### 3.2.3.2 5x5x5
 
 Bijbehorende [notebook](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/74229c4ad578f9d5f36d3459c717dc933a9a5689/notebooks/Cofano/Container%20Environment%20V12-Empty-Start-Step-Counter-5x5x5.ipynb)
 
