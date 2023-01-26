@@ -258,3 +258,5 @@ Verder heb ik net als de andere groepsleden het paper nog meerdere keren doorgel
 
 ## 6. Datacamp
 
+Ik heb 9/16 DataCamp [opdrachten](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/5049d8e5e2e00d0d0c7edaa1e764ec93314ddd18/images/DataCamp.png) voltooid.
+
