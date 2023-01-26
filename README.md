@@ -226,6 +226,7 @@ De visualisatie van de containers die zijn neergezet
 ## 4. Presentaties
 
 Ik heb voor ons groepje een aantal keer gepresenteerd. Manon bijna altijd de presentaties klaargezet en ik heb in sommige gevallen mijn aandeel hieraan toegevoegd.
+Ik heb niet alles gepresenteerd van de presentaties die ik hieronder zal benoemen natuurlijk, maar ik heb wel een significant aandeel erin gehad.
 
 ### 4.1 FoodBoost
 
