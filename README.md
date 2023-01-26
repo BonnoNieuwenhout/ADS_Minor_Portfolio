@@ -130,6 +130,11 @@ Ik data op een aantal manieren getest. Deze zijn hieronder op een rij gezet
 - [1 tegen n](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/1b95f351b9b07a29ee626f82c092d484aeeeac17/notebooks/FoodBoost/Test-Classifiers-With-LooV1-Compare-Tags-1onN-Specific.ipynb)
 - [n tegen n](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/1b95f351b9b07a29ee626f82c092d484aeeeac17/notebooks/FoodBoost/Test-Classifiers-With-LooV1-Compare-Tags-NonN-Specific.ipynb)
 
+Verder heb ik ook heat maps gemaakt om de resultaten vanuit de tabellen wat meer overzichtelijk te maken.
+Hieronder zijn een aantal heatmaps te zien en de daarbij behorende notebooks.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 ### 3.2 Cofano
 
 
@@ -218,7 +223,13 @@ De visualisatie van de containers die zijn neergezet
 
 ![img.png](images/visualisatie_container_5x5x5_BA.png)
 
-4. ## Presentaties
+## 4. Presentaties
+
+Ik heb voor ons groepje een aantal keer gepresenteerd. Manon bijna altijd de presentaties klaargezet en ik heb in sommige gevallen mijn aandeel hieraan toegevoegd.
+
+### 4.1 FoodBoost
+
+- [Interne presentatie]()
 
 5. ## Paper
 
