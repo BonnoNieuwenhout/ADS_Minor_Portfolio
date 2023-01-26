@@ -253,8 +253,8 @@ Ik heb me daarom vooral beziggehouden met de resultaten hiervan, omdat ik er het
 Ik kon uitleggen wat er precies in het model gebeurt en hoe het werkt.
 Verder heb ik net als de andere groepsleden het paper nog meerdere keren doorgelezen om te kijken of er nog ergens foutjes zitten.
 
-- [Research paper]()
-- [Onderzoeksresultaten door Bonno]()
+- [Research paper](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/fc42811bf7e18ffd0bbec0a2780f83d52c1f719d/paper/Projectgroep%201%20Research%20Paper.pdf)
+- [Onderzoeksresultaten door Bonno](https://github.com/BonnoNieuwenhout/ADS_Minor_Portfolio/blob/fc42811bf7e18ffd0bbec0a2780f83d52c1f719d/paper/Onderzoeksresultaten%20eindversie.pdf)
 
 ## 6. Datacamp
 
