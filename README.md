@@ -145,8 +145,6 @@ Hieronder zijn een aantal heatmaps te zien en de daarbij behorende notebooks.
 
 ### 3.2 Cofano
 
-
-
 Ik heb eerst geïtereerd van een vollere yard naar een lege yard. Echter, Ik kwam erachter dat dit uiteindelijk niet ten goede kwam voor het model.
 Door scores te vergelijken zag ik dat het model beter presteerde als het model altijd vanaf een lege yard begon.
 Dit kan komen doordat de functie die ik heb geschreven voor het invullen van de yard het een sub-optimale state geeft voor het model.
@@ -207,6 +205,7 @@ De loss grafiek van het model bij een yard van 3 bij 3 bij 3
 De visualisatie van de containers die zijn neergezet
 
 ![img.png](images/Cofano/visualisatie_container_3x3x3_VA.png)
+
 ![img_1.png](images/Cofano/visualisatie_container_3x3x3_AA.png)
 
 Zoals te zien is in de visualisatie zijn de containers voor elk schip vanaf de lange zijde te benaderen.
@@ -233,7 +232,7 @@ De visualisatie van de containers die zijn neergezet
 
 ## 4. Presentaties
 
-Ik heb voor ons groepje een aantal keer gepresenteerd. Manon heeft bijna altijd de presentaties klaargezet en ik heb in sommige gevallen mijn aandeel hieraan toegevoegd.
+Ik heb voor ons groepje een aantal keren gepresenteerd. Manon heeft bijna altijd de presentaties klaargezet en ik heb in sommige gevallen mijn aandeel hieraan toegevoegd.
 Ik heb niet alles gepresenteerd van de presentaties die ik hieronder zal benoemen natuurlijk, maar ik heb wel een significant aandeel erin gehad.
 
 ### 4.1 FoodBoost
